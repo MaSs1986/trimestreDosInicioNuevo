@@ -17,30 +17,65 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <img src="img/image1.png" alt="banner con el nombre de contacto y su logo" width="100%">
         <hr>
     </header>
     <main>
-        <section>
-            <h2>Un bueno para nada que esta perdido en la vida, con un amor incondicional a los videojuegos</h2>
-            <p>Hola, soy Miguel Angel Serrano Suarez, un estudiante del Sena sin ninguna especialización. Me apasionan los videojuegos y el Gimnasio, ando en busca de mi proposito de vida, sin exito aun.</p>
-            <h3>Mis redes sociales</h3>
-            <ul>
-                <li><a href="https://www.facebook.com/miguelanguel.serranosuarez?locale=es_LA" target="_blank">Facebook</a></li>
-                <li><a href="https://www.instagram.com/serrano_miguel86/" target="_blank">Instagram</a></li>
-                <li><a href="https://x.com/122Miguelas" target="_blank">X</a></li>
-                <li><a href="https://www.youtube.com/@MA.SS122" target="_blank">Youtube</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Mi experiencia laboral</h2>
-            <p>He trabajado como operador de aseo en una empresa de limpieza y sostenimiento</p>
-            <a href="experiencia.html">Ver mas</a>
-        </section>
-        <section>
-            <h2>Mis estudios</h2>
-            <p>He estudiado en 4 instituciones educativas diferentes en 2 ciudades, en las cuales curse los grados de bachiller y una Mediatecnica especializada en Sistemas Audiovisuales</p>
-            <a href="estudios.html">Ver mas</a>
-        </section>
+        <form action="datos.js">
+        <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">Formulario de Contacto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nombre</td>
+                <td><input type="text" name="nombre" required></td>
+            </tr>
+            <tr>
+                <td>Correo</td>
+                <td><input type="email" name="correo" required></td>
+            </tr>
+            <tr>
+                <td>Ciudad</td>
+                <td>
+                    <select name="ciudad" required>
+                    <option value="">Seleccione una ciudad</option>
+                    <option value="Bogota">Bogota</option>
+                    <option value="Medellin">Medellin</option>
+                    <option value="Santa Marta">Santa Marta</option>
+                    <option value="Barranquilla">Barranquilla</option>
+                    <option value="Cartagena">Cartagena</option>
+                    <option value="Cali">Cali</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>Mensaje</td>
+                <td><textarea name="mensaje" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td>Sexo</td>
+                <td>
+                    <input type="radio" name="sexo" value="masculino"><label>Masculino</label> 
+                    <input type="radio" name="sexo" value="femenino"><label>Femenino</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Intereses</td>
+                <td>
+                    <input type="checkbox" name="intereses" value="Videojuegos"><label>Videojuegos</label>
+                    <input type="checkbox" name="intereses" value="Estudiar"><label>Estudiar</label>
+                    <input type="checkbox" name="intereses" value="Leer"><label>Leer</label>
+                    <input type="checkbox" name="intereses" value="Musica"><label>Música</label>
+                </td>
+            <tr>
+                <td></td>
+                <td><button type="submit">Enviar</button></td>
+            </tr>
+        </table>
+        </form>
     </main>
     <footer>
         <p>&copy; 2026 Miguel Angel Serrano Suarez. Todos los derechos reservados.</p>
